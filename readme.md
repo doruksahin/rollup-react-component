@@ -21,4 +21,4 @@ npm run watch:tailwind
 
 ### Credits
 
-Many thanks to Alex Eagleson for enlightening.
+Many thanks to [Alex Eagleson](https://dev.to/alexeagleson/how-to-create-and-publish-a-react-component-library-2oe) for enlightening.
