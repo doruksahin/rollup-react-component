@@ -1,6 +1,6 @@
 {
   "name": "@doruksahin/gridflex",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "rollup": "npm run build:tailwind && rollup -c",
-    "build:tailwind": "tailwindcss -i ./src/index.css -o ./public/dist/style.css"
+    "build:tailwind": "tailwindcss -i ./src/index.css -o ./src/style.css"
   },
   "repository": {
     "type": "git",
