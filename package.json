@@ -1,5 +1,5 @@
 {
-  "name": "gridflex",
+  "name": "@doruksahin/gridflex",
   "version": "1.0.0",
   "description": "",
   "main": "dist/cjs/index.js",
@@ -8,6 +8,9 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/doruksahin"
+  },
   "scripts": {
     "rollup": "rollup -c"
   },
