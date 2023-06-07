@@ -2,7 +2,8 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import dts from 'rollup-plugin-dts';
-
+import postcss from 'rollup-plugin-postcss';
+import tailwindcss from 'tailwindcss';
 import packageJson from './package.json' assert {type: 'json'};
 
 export default [
@@ -20,7 +21,12 @@ export default [
         sourcemap: true,
       },
     ],
-    plugins: [resolve(), commonjs(), typescript({tsconfig: './tsconfig.json'})],
+    plugins: [
+      tailwindcss(),
+      resolve(),
+      commonjs(),
+      typescript({tsconfig: './tsconfig.json'}),
+    ],
   },
   {
     input: 'dist/esm/types/index.d.ts',
