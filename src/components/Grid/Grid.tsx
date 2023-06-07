@@ -5,7 +5,7 @@ export interface GridProps {
 }
 
 const Grid = (props: GridProps) => {
-  return <div>This is a Grid</div>;
+  return <div className="bg-red-300">This is a Grid</div>;
 };
 
 export default Grid;
